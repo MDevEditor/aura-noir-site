@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background: #f5efe7;
+    font-family: sans-serif;
+    color: #1a1a1a;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: #e7d7c9;
+}
+
+.logo {
+    height: 60px;
+}
+
+.hero {
+    height: 70vh;
+    background: url('../assets/hero-bg.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    margin-left: 40px;
+    background: rgba(0,0,0,0.35);
+    color: white;
+    padding: 30px;
+    border-radius: 14px;
+}
+
+.products {
+    padding: 40px;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 9px rgba(0,0,0,0.12);
+}
