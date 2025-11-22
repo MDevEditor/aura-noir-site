@@ -2,8 +2,8 @@ backend:
   name: github
   repo: MDevEditor/aura-noir-site
   branch: main
-  auth:
-    redirect_url: https://aura-noir-site-git.pages.dev/admin/
+  base_url: https://aura-noir-cms-auth.mohammadi-7162.workers.dev
+  auth_endpoint: /.netlify/functions/auth
 
 site_url: https://aura-noir-site-git.pages.dev
 
