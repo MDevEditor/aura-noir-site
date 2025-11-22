@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+ name: github
+  repo: MDevEditor/aura-noir-site name: git-gateway
   branch: main
 
 media_folder: "assets/uploads"
