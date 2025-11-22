@@ -1,39 +1,19 @@
 backend:
- name: github
-  repo: MDevEditor/aura-noir-site name: git-gateway
+  name: github
+  repo: MDevEditor/aura-noir-site
   branch: main
 
-media_folder: "assets/uploads"
-public_folder: "/assets/uploads"
+media_folder: "static/img"
+public_folder: "/img"
 
 collections:
-  - name: "content"
-    label: "تنظیمات محتوا"
-    files:
-      - file: "lang/fa.json"
-        label: "محتوای فارسی"
-        name: "fa"
-        fields:
-          - { label: "عنوان سایت", name: "site_title", widget: "string" }
-          - { label: "عنوان هدر", name: "hero_title", widget: "string" }
-          - { label: "توضیح هدر", name: "hero_desc", widget: "text" }
-          - { label: "عنوان محصولات", name: "products_title", widget: "string" }
-          - { label: "نام محصول ۱", name: "product_1_name", widget: "string" }
-          - { label: "توضیح محصول ۱", name: "product_1_desc", widget: "text" }
-          - { label: "نام محصول ۲", name: "product_2_name", widget: "string" }
-          - { label: "توضیح محصول ۲", name: "product_2_desc", widget: "text" }
-          - { label: "متن فوتر", name: "footer_text", widget: "string" }
-
-      - file: "lang/en.json"
-        label: "English Content"
-        name: "en"
-        fields:
-          - { label: "Site Title", name: "site_title", widget: "string" }
-          - { label: "Hero Title", name: "hero_title", widget: "string" }
-          - { label: "Hero Description", name: "hero_desc", widget: "text" }
-          - { label: "Products Title", name: "products_title", widget: "string" }
-          - { label: "Product 1 Name", name: "product_1_name", widget: "string" }
-          - { label: "Product 1 Description", name: "product_1_desc", widget: "text" }
-          - { label: "Product 2 Name", name: "product_2_name", widget: "string" }
-          - { label: "Product 2 Description", name: "product_2_desc", widget: "text" }
-          - { label: "Footer Text", name: "footer_text", widget: "string" }
+  - name: products
+    label: Products
+    folder: "products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Price", name: "price", widget: "number" }
+      - { label: "Image", name: "image", widget: "image" }
