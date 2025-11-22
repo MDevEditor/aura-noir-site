@@ -2,18 +2,21 @@ backend:
   name: github
   repo: MDevEditor/aura-noir-site
   branch: main
+  auth:
+    redirect_url: https://aura-noir-site-git.pages.dev/admin/
 
-media_folder: "static/img"
-public_folder: "/img"
+site_url: https://aura-noir-site-git.pages.dev
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
 
 collections:
-  - name: products
-    label: Products
-    folder: "products"
+  - name: "posts"
+    label: "Posts"
+    folder: "posts"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Price", name: "price", widget: "number" }
-      - { label: "Image", name: "image", widget: "image" }
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "body", label: "Body", widget: "markdown" }
