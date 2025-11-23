@@ -1,26 +1,20 @@
 backend:
   name: github
-  repo: MDevEditor/aura-noir-site
+  repo: mohammadi-7162/aura-noir-site
   branch: main
-  base_url: https://aura-noir-cms-auth.mohammadi-7162.workers.dev
-  auth_endpoint: /auth
+  base_url: https://aura-noir-auth.mohammadi-7162.workers.dev
+  auth_endpoint: auth
 
-media_folder: "static/images/uploads"
-public_folder: "/images/uploads"
+media_folder: "public/uploads"
+public_folder: "/uploads"
 
 collections:
   - name: "posts"
     label: "Posts"
-    folder: "posts"
+    folder: "public/posts"
     create: true
     slug: "{{slug}}"
     fields:
-      - name: "title"
-        label: "Title"
-        widget: "string"
-      - name: "date"
-        label: "Date"
-        widget: "datetime"
-      - name: "body"
-        label: "Body"
-        widget: "markdown"
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "body", label: "Body", widget: "markdown" }
