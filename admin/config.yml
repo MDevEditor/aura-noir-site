@@ -1,12 +1,12 @@
 backend:
   name: github
-  repo: MDevEditor/aura-noir-site
+  repo: mohammadi7162/aura-noir   # با یوزرنیم و ریپوی واقعی خودت جایگزین کن
   branch: main
   base_url: https://aura-noir-cms-auth.mohammadi-7162.workers.dev
   auth_endpoint: /auth
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "static/uploads"
+public_folder: "/uploads"
 
 collections:
   - name: "posts"
