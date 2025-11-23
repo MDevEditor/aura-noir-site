@@ -1,7 +1,7 @@
 backend:
   name: github
-  repo: MDevEditor/aura-noir-site   # نام یوزرنیم و ریپو دقیق GitHub
-  branch: main                      # یا اسم شاخه اصلی، مثلا master اگر استفاده می‌کنی
+  repo: MDevEditor/aura-noir-site
+  branch: main
   base_url: https://aura-noir-cms-auth.mohammadi-7162.workers.dev
   auth_endpoint: /auth
 
@@ -15,6 +15,12 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { name: "title", label: "Title", widget: "string" }
-      - { name: "date", label: "Date", widget: "datetime" }
-      - { name: "body", label: "Body", widget: "markdown" }
+      - name: "title"
+        label: "Title"
+        widget: "string"
+      - name: "date"
+        label: "Date"
+        widget: "datetime"
+      - name: "body"
+        label: "Body"
+        widget: "markdown"
