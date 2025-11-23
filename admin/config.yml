@@ -3,6 +3,7 @@ backend:
   repo: MDevEditor/aura-noir-site
   branch: main
   base_url: https://aura-noir-cms-auth.mohammadi-7162.workers.dev
+  auth_endpoint: /auth
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
