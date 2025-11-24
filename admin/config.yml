@@ -2,7 +2,7 @@ backend:
   name: github
   repo: Mohammadi-7162/aura-noir-site
   branch: main
-  base_url: https://aura-noir-auth.mohammadi-7162.workers.dev
+  base_url:"https://aura-noir-auth.mohammadi-7162.workers.dev"
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
