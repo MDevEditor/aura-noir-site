@@ -1,5 +1,9 @@
 {
-  "version": 1,
-  "include": [ "/*" ],
-  "exclude": [ "/admin/*", "/admin/config.yml" ]
+
+“version”: 1,
+
+“include”: [“/*”],
+
+“exclude”: [“/admin/*”, “/admin/config.yml”]
+
 }
